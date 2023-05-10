@@ -7,16 +7,16 @@
 
     <fragment
         android:id="@+id/detailsCharacterFragment"
-        android:name="daniel.lop.io.marvelappstarter.ui.details.DetailsCharacterFragment"
+        android:name="joaquim.lop.io.marvelappstarter.ui.details.DetailsCharacterFragment"
         android:label="DetailsCharacterFragment"
         tools:layout="@layout/fragment_details_character">
         <argument
             android:name="character"
-            app:argType="daniel.lop.io.marvelappstarter.data.model.character.CharacterModel" />
+            app:argType="joaquim.lop.io.marvelappstarter.data.model.character.CharacterModel" />
     </fragment>
     <fragment
         android:id="@+id/favoriteCharacterFragment"
-        android:name="daniel.lop.io.marvelappstarter.ui.favorite.FavoriteCharacterFragment"
+        android:name="joaquim.lop.io.marvelappstarter.ui.favorite.FavoriteCharacterFragment"
         android:label="FavoriteCharacterFragment"
         tools:layout="@layout/fragment_favorite_character">
         <action
@@ -25,7 +25,7 @@
     </fragment>
     <fragment
         android:id="@+id/listCharacterFragment"
-        android:name="daniel.lop.io.marvelappstarter.ui.list.ListCharacterFragment"
+        android:name="joaquim.lop.io.marvelappstarter.ui.list.ListCharacterFragment"
         android:label="ListCharacterFragment"
         tools:layout="@layout/fragment_list_character">
         <action
@@ -34,7 +34,7 @@
     </fragment>
     <fragment
         android:id="@+id/searchCharacterFragment"
-        android:name="daniel.lop.io.marvelappstarter.ui.search.SearchCharacterFragment"
+        android:name="joaquim.lop.io.marvelappstarter.ui.search.SearchCharacterFragment"
         android:label="SearchCharacterFragment"
         tools:layout="@layout/fragment_search_character">
         <action
