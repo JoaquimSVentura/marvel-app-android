@@ -33,7 +33,7 @@ object Module {
                 val newUrl = chain.request().url
                     .newBuilder()
                     .addQueryParameter(Constants.TS, currentTimestamp.toString())
-                    .addQueryParameter(Constants.APIKEY, Constants.APIKEY)
+                    .addQueryParameter(Constants.APIKEY, Constants.PUBLIC_KEY)
                     .addQueryParameter(
                         Constants.HASH,
                         provideToMd5Hash(currentTimestamp.toString() + Constants.PRIVATE_KEY + Constants.PUBLIC_KEY)
@@ -49,6 +49,8 @@ object Module {
             .build()
     }
 
+    @Singleton
+    @Provides
     fun provideRetrofit(client: OkHttpClient): Retrofit {
         return Retrofit.Builder()
             .baseUrl(BASE_URL)

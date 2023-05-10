@@ -1,7 +1,7 @@
 package daniel.lop.io.marvelappstarter
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.setupWithNavController
 import dagger.hilt.android.AndroidEntryPoint
@@ -26,7 +26,7 @@ class MainActivity : AppCompatActivity() {
         val navController = navHostFragment.navController
         binding.bottomNavigation.apply {
             setupWithNavController(navController)
-            setOnNavigationItemReselectedListener {  }
+            setOnNavigationItemReselectedListener { }
         }
     }
 }
