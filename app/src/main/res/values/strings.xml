@@ -2,7 +2,7 @@
     <string name="app_name">Marvel App</string>
 
     <!--    Splash Activity -->
-    <string name="marvel">MARVEL</string>
+    <string name="splash">;)</string>
 
     <!--    Item character and Item comic -->
     <string name="tx_item_name">Nome</string>
