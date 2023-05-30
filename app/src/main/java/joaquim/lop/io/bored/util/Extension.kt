@@ -1,7 +1,10 @@
 package joaquim.lop.io.bored.util
 
+import android.content.Intent
+import android.net.Uri
 import android.view.View
 import android.widget.Toast
+import androidx.core.content.ContextCompat.startActivity
 import androidx.fragment.app.Fragment
 import java.math.BigDecimal
 import java.text.DecimalFormat
@@ -22,6 +25,12 @@ fun View.show() {
 
 fun View.hide() {
     visibility = View.INVISIBLE
+}
+
+fun openWebPage(url: String): Intent {
+    val intent = Intent(Intent.ACTION_VIEW)
+    intent.data = Uri.parse(url)
+    return intent
 }
 
 fun currencyFormat(

@@ -9,6 +9,21 @@
         android:id="@+id/listCharacterFragment"
         android:name="joaquim.lop.io.bored.ui.list.ListBoredFragment"
         android:label="ListCharacterFragment"
-        tools:layout="@layout/fragment_list_bored" />
+        tools:layout="@layout/fragment_list_bored" >
+        <action
+            android:id="@+id/action_listCharacterFragment_to_boredActivityDetailsFragment"
+            app:destination="@id/boredActivityDetailsFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/boredActivityDetailsFragment"
+        android:name="joaquim.lop.io.bored.ui.details.BoredActivityDetailsFragment"
+        android:label="BoredActivityDetailsFragment"
+        tools:layout="@layout/fragment_bored_activity_details">
+
+        <argument
+            android:name="model"
+            app:argType="joaquim.lop.io.bored.data.model.character.BoredModel" />
+    </fragment>
 
 </navigation>
